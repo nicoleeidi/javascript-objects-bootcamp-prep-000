@@ -1,9 +1,10 @@
 const playlist={
-  artist:song
+  artist:"song"
 }
 
 function updatePlaylist(obj,key,value){
-  return Object.assign({}, playlist, { [key]: value })
+  var newObj= Object.assign({}, playlist, { [key]: value })
+  return newObj
 }
 function removeFromPlaylist(obj,key){
   delete obj[key]
